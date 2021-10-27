@@ -20,7 +20,7 @@ window.addEventListener("load", async () => {
   const loginTemplate = await loadTemplate("pages/login-logout/login.html")
   adjustForMissingHash()  //ONLY do this if you have set hash
 
-  updateLoginDependentComponents();
+  //updateLoginDependentComponents();
 
   router
     .hooks({
