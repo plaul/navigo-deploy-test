@@ -5,12 +5,14 @@ import singleBook from "./pages/singleBook/singleBook.js"
 import login from "./pages/login-logout/login.js"
 import logout from "./pages/login-logout/logout.js"
 import { updateLoginDependentComponents } from "./pages/login-logout/handleLoggedInState.js"
+import { root } from "./settings.js"
 
 
 import { adjustForMissingHash, loadTemplate, renderTemplate, setActiveLink } from "./utils.js"
 
 window.addEventListener("load", async () => {
-  const router = new Navigo("/", { hash: true });
+  //const router = new Navigo("/", { hash: true });
+  const router = new Navigo(root, { hash: true });
   const homeTemplate = await loadTemplate("pages/home.html")
   const bookTemplate = await loadTemplate("pages/all/books.html")
   const addBookTemplate = await loadTemplate("pages/add/addBook.html")
