@@ -5,7 +5,6 @@ import singleBook from "./pages/singleBook/singleBook.js"
 import login from "./pages/login-logout/login.js"
 import logout from "./pages/login-logout/logout.js"
 import { updateLoginDependentComponents } from "./pages/login-logout/handleLoggedInState.js"
-import { root } from "./settings.js"
 
 
 import { adjustForMissingHash, loadTemplate, renderTemplate, setActiveLink } from "./utils.js"
