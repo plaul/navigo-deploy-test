@@ -10,8 +10,8 @@ import { updateLoginDependentComponents } from "./pages/login-logout/handleLogge
 import { adjustForMissingHash, loadTemplate, renderTemplate, setActiveLink } from "./utils.js"
 
 window.addEventListener("load", async () => {
-  //const router = new Navigo("/", { hash: true });
-  const router = new Navigo(root, { hash: true });
+  const router = new Navigo("/", { hash: true });
+  //const router = new Navigo(root, { hash: true });
   const homeTemplate = await loadTemplate("pages/home.html")
   const bookTemplate = await loadTemplate("pages/all/books.html")
   const addBookTemplate = await loadTemplate("pages/add/addBook.html")
